@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/Lerbron/react-cli-tmp.git",
-  "author": "maqiling <maqiling@shanda.com>",
+  "author": "maqiling <maqlln@163.com>",
   "license": "MIT",
   "scripts": {
     "start": "react-cli server",
