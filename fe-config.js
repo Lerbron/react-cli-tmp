@@ -1,14 +1,14 @@
 
-var proxy = {
+let proxy = {
   '/fishVideo/': {
     target: 'https://mip.yesky.com',
     changeOrigin: true
   }
 }
 
-var entry = ['index']
+let entry = ['index']
 
-var vendor = [
+let vendor = [
   'react',
   'react-dom',
   'react-router',
@@ -20,11 +20,13 @@ var vendor = [
   'react-loadable'
 ]
 
-var baseUrl = '/'
+let baseUrl = '/'
+let title= 'react-cli-tmp'
 
 module.exports = {
   vendor,
   entry,
   proxy,
-  baseUrl
+  baseUrl,
+  title
 }
