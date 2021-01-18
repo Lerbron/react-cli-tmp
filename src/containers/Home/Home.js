@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { connect } from "react-redux";
+import intl from "react-intl-universal";
 import { testNum } from '@/actions/testActions'
 import checkNum from '@/utils/test'
 import imgUrl from '@/assets/icons/img.jpg'
@@ -31,6 +32,7 @@ const Home= (props) => {
     <Button type='ghost' onClick={goAbout}>Login</Button>
     <div>{num}</div>
     <div onClick={add}>add</div>
+    <div>{intl.get('lang')}</div>
     <img src={imgUrl} />
   </div>
 }
