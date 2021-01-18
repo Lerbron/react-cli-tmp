@@ -3,12 +3,14 @@ import AppRoutes from "@/routes/index";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import intl from "react-intl-universal";
-import EN from "./locales/en.json";
-import CH from "./locales/zh.json";
+import EN from "@/locales/en.json";
+import CH from "@/locales/zh.json";
 import thunkMiddleware from "redux-thunk";
 import reducers from "@/reducers/index";
+import getLanguage from "@/utils/getLanguage";
 
 export const store = createStore(reducers, applyMiddleware(thunkMiddleware));
+const lang = getLanguage();
 
 function App() {
   const [initDone, setInitDone] = useState(false);
